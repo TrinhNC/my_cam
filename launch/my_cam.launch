@@ -1,6 +1,6 @@
 <launch>
     <arg name="camera_name" default="/dev/video0"/>
-    <node name="my_webcam" pkg="my_cam" type="image_publisher.py" output="screen">
+    <node name="my_webcam" pkg="my_cam" type="image_publisher_launch.py" output="screen">
         <param name="camera_name" type="string" value="$(arg camera_name)" />
     </node>
 </launch>
